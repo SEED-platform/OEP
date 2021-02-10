@@ -68,13 +68,13 @@ There are two primary file **s** to edit for configuration. Configuration Proper
 
 ## Edit Configuration Properties
 
-Configuration can be edited in the Oei.properties file. It is found in the github site at: [https://github.com/OpenEfficiencyPlatform/OEP/tree/master/SEED%20Benchmark/mulesoft/src/main/resources](https://github.com/OpenEfficiencyPlatform/OEP/tree/master/SEED%20Benchmark/mulesoft/src/main/resources)
+Configuration can be edited in the `oei.properties` file. It is found in the GitHub [here](/SEED%20Benchmark/conf)
 
-Edit, save, commit changes to this file. The instance must be reloaded for it to run using the updated Oei.properties file. All new instances will require updating: Mule host configuration, SEED user configuration, Salesforce user configuration, and Mule error email configuration. Some instances may choose to update: SEED trigger update label name configuration, and update timer configuration.
+Edit, save, commit changes to this file. The instance must be reloaded for it to run using the updated `oei.properties` file. All new instances will require updating: Mule host configuration, SEED user configuration, Salesforce user configuration, and Mule error email configuration. Some instances may choose to update: SEED trigger update label name configuration, and update timer configuration.
 
 ## Edit Field Mappings
 
-Field mappings can be edited, deleted, and added in the groovy files. The groovy files are found in the github site at: [https://github.com/OpenEfficiencyPlatform/OEP/tree/master/SEED%20Benchmark/mulesoft/src/main/groovy](https://github.com/OpenEfficiencyPlatform/OEP/tree/master/SEED%20Benchmark/mulesoft/src/main/groovy)
+Field mappings can be edited, deleted, and added in the groovy files. The groovy files are found in GitHub [here](/SEED%20Benchmark/OEI/classes)
 
 AccountToSalesforce.groovy can be edited to configure the field mappings for the Salesforce Account object.
 
@@ -84,16 +84,14 @@ SEEDPropertyToSFBenchmark.groovy can be edited to configure the field mappings f
 
 # 6: Modify MuleSoft solution
 
-The MuleSoft code is open source and has been made available in the github site: [https://github.com/OpenEfficiencyPlatform/OEP/tree/master/SEED%20Benchmark/mulesoft](https://github.com/OpenEfficiencyPlatform/OEP/tree/master/SEED%20Benchmark/mulesoft).
+The MuleSoft code is open source. 
 
 # 7: References
 
-Find documentation about OEP at the github site: [https://github.com/OpenEfficiencyPlatform/OEP](https://github.com/OpenEfficiencyPlatform/OEP)
+Find documentation about OEP at the GitHub site [here](/OEP)
 
 Relevant documentation in the OEP github site includes:
 
-- [1] OEP Data Model
+- [1] [OEP Data Model](/Salesforce%20Package/OEP%20Data%20Model.xlsx)
 
-[https://github.com/OpenEfficiencyPlatform/OEP/blob/master/Salesforce%20Package/OEP%20Data%20Model.xlsx](https://github.com/OpenEfficiencyPlatform/OEP/blob/master/Salesforce%20Package/OEP%20Data%20Model.xlsx)
-
-- [2] OEP Benchmark User Guide: [https://github.com/OpenEfficiencyPlatform/OEP/blob/master/SEED%20Benchmark/guides/OEP%20Benchmark%20User%20Guide.docx](https://github.com/OpenEfficiencyPlatform/OEP/blob/master/SEED%20Benchmark/guides/OEP%20Benchmark%20User%20Guide.docx)
+- [2] [OEP Benchmark User Guide](/SEED%20Benchmark/guides/README.md)
