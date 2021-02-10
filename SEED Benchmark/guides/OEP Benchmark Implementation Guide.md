@@ -86,8 +86,6 @@ The MuleSoft code is open source.
 
 # 7: References
 
-Find documentation about OEP at the GitHub site [here](/OEP)
-
 Relevant documentation in the OEP GitHub site includes:
 
 - [1] [OEP Data Model](/Salesforce%20Package/OEP%20Data%20Model.xlsx)

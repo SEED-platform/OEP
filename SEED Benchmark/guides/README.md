@@ -149,8 +149,6 @@ Total GHG Emissions Intensity (kgCO2e/ft: invalid number: sdf
 
 # 4: References
 
-Find documentation about OEP at the [GitHub site](/OEP)
-
 Relevant documentation for the SEED Benchmark use case that this User Guide supports can be found at in the OEP GitHub site:
 
 - [1] [OEP Benchmark Implementation Guide](/SEED%20Benchmark/guides/OEP%20Benchmark%20Implementation%20Guide.md)
