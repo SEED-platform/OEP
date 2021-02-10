@@ -1,8 +1,6 @@
 ![](oep.png)
 
-# README 
-
-This documents how to implement OEP for benchmarking
+# **Benchmark Implementation Guide**
 
 Last Updated: 2019
 
@@ -68,7 +66,7 @@ There are two primary file **s** to edit for configuration. Configuration Proper
 
 ## Edit Configuration Properties
 
-Configuration can be edited in the Oei.properties file. It is found in the github site at: [https://github.com/OpenEfficiencyPlatform/OEP/tree/master/SEED%20Benchmark/mulesoft/src/main/resources](https://github.com/OpenEfficiencyPlatform/OEP/tree/master/SEED%20Benchmark/mulesoft/src/main/resources)
+Configuration can be edited in the Oei.properties file. It is found in [github](/SEED%20Benchmark/conf)
 
 Edit, save, commit changes to this file. The instance must be reloaded for it to run using the updated Oei.properties file. All new instances will require updating: Mule host configuration, SEED user configuration, Salesforce user configuration, and Mule error email configuration. Some instances may choose to update: SEED trigger update label name configuration, and update timer configuration.
 
