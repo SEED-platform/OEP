@@ -116,13 +116,14 @@ After the update duration has passed (default configured to 60 minutes) confirm 
 
 ## Errors
 
-| **Error Reference Table** |
-| --- |
-| **Error Code** | **Error Details and User Hints** |
-| [Error1] | _ **Missing Update Label:** _ No labels that trigger updates have been applied to this property, so no records are updated. The user can resolve this error by applying a Label, in SEED to the identified Property, that will trigger an update. For City of San Francisco this is either "Complied" or "Violation – Insufficient Data".OR_ **Multiple Update Label:** _ Two different labels that trigger updates have been applied to this property, so no records are updated to avoid the incorrect type of update from occurring.The user can resolve this error by removing one of the Labels, in SEED to the identified Property, that will trigger an update. For City of San Francisco this is either "Complied" or "Violation – Insufficient Data". |
-| [Error2] | _ **Missing Benchmark Salesforce ID** __:_ Benchmark Salesforce ID field is missing for this property, so no records are updated.The user can resolve this error by data entering the Salesforce Benchmark ID, in SEED to the identified Property. |
-| [Error3] | _ **Data Error in Salesforce Update:** _ There is an error in a field value coming from SEED.The user can resolve this error by looking at the message in the error. It will point to the error, resolve error. |
-| [Info1] | _ **MuleSoft instance exception error** __:_ The user can confirm whether recent updates have occurred as expected. If they have not, the user can retrigger the SEED property record by editing it. The user cannot directly resolve this error as it is caused by a system exception. Contact a system administrator if it persists. |
+### Error Reference Table
+
+|     Error Code    |     Error Details and User Hints |
+|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     [Error1]      |     Missing   Update Label: No labels that trigger updates have been applied to   this property, so no records are updated.      The user can   resolve this error by applying a Label, in SEED to the identified Property,   that will trigger an update. For City of San Francisco this is either   “Complied” or “Violation – Insufficient Data”.     OR     Multiple   Update Label: Two different labels that trigger updates have been applied   to this property, so no records are updated to avoid the incorrect type of   update from occurring.     The user can   resolve this error by removing one of the Labels, in SEED to the identified Property,   that will trigger an update. For City of San Francisco this is either   “Complied” or “Violation – Insufficient Data”.    |
+|     [Error2]      |     Missing   Benchmark Salesforce ID: Benchmark   Salesforce ID field is missing for this property, so no records are updated.     The user can   resolve this error by data entering the Salesforce Benchmark ID, in SEED to   the identified Property. |
+|     [Error3]      |     Data   Error in Salesforce Update: There is an error in a field value coming   from SEED.     The user can   resolve this error by looking at the message in the error. It will point to   the error, resolve error. |
+|     [Info1]       |     MuleSoft   instance exception error: The   user can confirm whether recent updates have occurred as expected. If they   have not, the user can retrigger the SEED property record by editing it.      The user   cannot directly resolve this error as it is caused by a system exception.   Contact a system administrator if it persists.  |
 
 ## Example Error Log Email
 
@@ -150,7 +151,7 @@ Total GHG Emissions Intensity (kgCO2e/ft: invalid number: sdf
 
 Find documentation about OEP at the [GitHub site](/OEP)
 
-Relevant documentation for the SEED Benchmark use case that this User Guide supports can be found at in the OEP github site:
+Relevant documentation for the SEED Benchmark use case that this User Guide supports can be found at in the OEP GitHub site:
 
 - [1] [OEP Benchmark Implementation Guide](/SEED%20Benchmark/guides/OEP%20Benchmark%20Implementation%20Guide.md)
 
