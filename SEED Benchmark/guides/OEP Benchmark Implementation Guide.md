@@ -8,7 +8,7 @@ Last Updated: 2019
 
 [1: Introduction 3](#_Toc534371569)
 
-[2: Salesforce Managed Package &quot;OEI Platform&quot; 4](#_Toc534371570)
+[2: Salesforce Managed Package "OEI Platform" 4](#_Toc534371570)
 
 [3: Docker MuleSoft solution 5](#_Toc534371571)
 
@@ -26,15 +26,15 @@ Last Updated: 2019
 
 # **1: Introduction**
 
-This document is an implementation guide to support Benchmark programs by automating benchmark record data updates from the Standard Energy Efficiency Data (SEED) Platform to Salesforce.com. The automation is provided via MuleSoft Anypoint Platform Community Edition API. The MuleSoft API provides one-way data flow, with Property records in SEED updating records in a Salesforce managed package called the &quot;OEI Platform&quot;.
+This document is an implementation guide to support Benchmark programs by automating benchmark record data updates from the Standard Energy Efficiency Data (SEED) Platform to Salesforce.com. The automation is provided via MuleSoft Anypoint Platform Community Edition API. The MuleSoft API provides one-way data flow, with Property records in SEED updating records in a Salesforce managed package called the "OEI Platform".
 
 This automation was developed to support a pilot project with the City of San Francisco. It is an open source solution that can be configured to meet the needs of other organizations interested in benchmarking data management using SEED and Salesforce.
 
 This guide, the OEP Benchmark Implementation Guide, should be followed to setup an implementation of the OEP Benchmark solution.
 
-This document describes how to install the Salesforce managed package in your organization&#39;s Salesforce instance, how to install the dockered MuleSoft solution, how to configure the MuleSoft solution for your instance, and how to modify the MuleSoft solution for your instance.
+This document describes how to install the Salesforce managed package in your organization's Salesforce instance, how to install the dockered MuleSoft solution, how to configure the MuleSoft solution for your instance, and how to modify the MuleSoft solution for your instance.
 
-# 2: Salesforce Managed Package &quot;OEI Platform&quot;
+# 2: Salesforce Managed Package "OEI Platform"
 
 Login to your organizations Salesforce instance. If you do not already have an instance, go to Salesforce.com to learn more about Salesforce and its licensing options.
 
@@ -46,11 +46,11 @@ Production: [https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1
 
 For either URL enter the password: MLLk7aCPvz2cBTP3pV3Y
 
-Select &quot;Install for all Users&quot;
+Select "Install for all Users"
 
-Go to Setup, search for Installed Packages, confirm &quot;OEI Platform&quot; is installed
+Go to Setup, search for Installed Packages, confirm "OEI Platform" is installed
 
-In App launcher, select &quot;OEI&quot; App, view the tabs. The &quot;Premises&quot;, &quot;Benchmark&quot;, &quot;Account&quot;, and &quot;Contacts&quot; tabs/objects are used for the Benchmark use case. They are documented at the field level in the OEP Data Model [1]. The OEP Data Model includes field level mappings from ENERGY STAR Portfolio Manager and SEED to Salesforce. It also includes identification of which fields are updated for the &quot;Update Label &amp; Properties&quot; and &quot;Update Label&quot; updates via MuleSoft API.
+In App launcher, select "OEI" App, view the tabs. The "Premises", "Benchmark", "Account", and "Contacts" tabs/objects are used for the Benchmark use case. They are documented at the field level in the OEP Data Model [1]. The OEP Data Model includes field level mappings from ENERGY STAR Portfolio Manager and SEED to Salesforce. It also includes identification of which fields are updated for the "Update Label & Properties" and "Update Label" updates via MuleSoft API.
 
 # 3: Docker MuleSoft solution
 
