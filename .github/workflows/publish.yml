@@ -1,4 +1,4 @@
-name: CI
+name: Publish
 
 on:
   push:
@@ -21,6 +21,11 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
+        name: Set up xmllint
+        run: |
+          sudo apt update
+          sudo apt install -y libxml2-utils
+      -
         name: Parse Tag
         id: parse_tag
         run: |
@@ -28,7 +33,7 @@ jobs:
 
           if [[ "${GITHUB_REF}" == "refs/heads/Dev" ]]; then
             OEP_TAG=develop
-          elif [[ "${GITHUB_REF}" == "refs/tags/master" ]]; then
+          elif [[ "${GITHUB_REF}" == "refs/heads/master" ]]; then
             OEP_TAG=$( cat "SEED Benchmark/OEI/pom.xml"  | sed '2 s/xmlns=".*"//g' | xmllint --xpath "string(/project/version)" -)
           else
             echo "Unhandled GITHUB_REF (this shouldn't happen), exiting"
