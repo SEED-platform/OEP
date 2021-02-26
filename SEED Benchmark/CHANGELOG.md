@@ -1,5 +1,10 @@
 # OEP / SEED Benchmark
 
+## 1.7 (unreleased)
+
+* Updated documentation to be markdown.
+
+
 ## 1.6
 
 * Escape quotes when passing data to SEED API

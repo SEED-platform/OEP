@@ -6,12 +6,16 @@ The OEP SEED Benchmark supports Benchmark programs by automting benchmark record
 
 This automation was developed to support a pilot project with the City of San Francisco. It is an open source solution that can be configured to meet the needs of other organizations interested in benchmarking data management using SEED and Salesforce.
 
-Get started with: OEP / SEED Benchmark / guides
-It includes the OEP Benchmark Implementation Guide and OEP User Guide.
+Get started [here](/SEED%20Benchmark/guides/). This includes the User Guide (which is the README) and the Benchmark Implementation Guide.
 
 "OEI" folder holds the self extracting zip MuleSoft files to be used for Docker.
 
-"mulesoft" folder holds files using the MuleSoft Anypoint Studio to review or edit the MuleSoft files.
+# SEED Benchmark Salesforce
+
+The SEED Benchmark use case, leverages the OEP Salesforce managed package "OEI Package".
+Documentation for installing the managaged package and referencing the OEP Data Model can be found [here](/Salesforce%20Package)
+
+The SEED Benchmark uses the Premises and Benchmark managed package objects and uses the standard Account, and Contact objects. It includes reports in the OEI Reports folder and email templates in the OEI Email Templates folder with the name "Benchmark in them.
 
 ## Deployment
 
@@ -23,5 +27,5 @@ The preferred method of deployment is to use docker and docker stack deploy. The
 
 # TODO
 
-* Remove spaces from directory names. It can cause some trivial issues with Docker
-* Add Docker instructions to Benchmark Implementation Guide
+* Remove spaces from directory names. It can cause some trivial issues with Docker.
+* Add Docker instructions to Benchmark Implementation Guide.
