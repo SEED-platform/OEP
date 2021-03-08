@@ -24,3 +24,11 @@ repos:
       - id: mixed-line-ending
       - id: pretty-format-json
         args: ['--autofix', '--no-sort-keys']
+  - repo: local
+    hooks:
+      - id: format-xml
+        name: Format XML
+        language: python
+        entry: python format_xml.py
+        types: [xml]
+        additional_dependencies: ['lxml==4.6.1']
