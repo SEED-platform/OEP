@@ -11,6 +11,7 @@ Benchmark = [
 
 	// Custom fields per Org
 	oei__Contact_Name__c: flowVars["ContactResults"],
+	oei_Property_Data_Administrator__c: flowVars["AdminContactResults"],
 	oei__Diff_from_National_Median_Site_EUI__c: propData["% Difference from National Median Site EUI"],
 	oei__Diff_than_National_Median_Source_EUI__c: propData["% Difference from National Median Source EUI"],
 	oei__ENERGY_STAR_Score__c: propData["ENERGY STAR Score"],
