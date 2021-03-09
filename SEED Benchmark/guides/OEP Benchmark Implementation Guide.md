@@ -80,6 +80,8 @@ ContactToSalesforce.groovy can be edited to configure the field mappings for the
 
 SEEDPropertyToSFBenchmark.groovy can be edited to configure the field mappings for the Salesforce Benchmark object.
 
+Note: Use a single underscore after an OEI field if it is a custom field not provided by the OEI app. For example, `oei_Property_Data_Administrator__c` on the Benchmark object.
+
 # 6: Modify MuleSoft solution
 
 The MuleSoft code is open source. 

@@ -3,7 +3,9 @@
 ## 1.7 (unreleased)
 
 * Updated documentation to be markdown.
-
+* Add new Property Data Administrator field mapping from SEED to Salesfore
+* Add XML formatting
+* New SEED_APIVERSION field (defaults to v2 for now)
 
 ## 1.6
 
