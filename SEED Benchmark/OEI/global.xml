@@ -9,7 +9,7 @@
   <sfdc:config doc:name="Salesforce" name="Testbed-Salesforce" password="${salesforce.password}" securityToken="${salesforce.token}" url="${salesforce.url}" username="${salesforce.user}">
     <sfdc:connection-pooling-profile exhaustedAction="WHEN_EXHAUSTED_GROW" initialisationPolicy="INITIALISE_ONE"/>
   </sfdc:config>
-  <http:request-config basePath="/api/${SEED.apiversion}" doc:name="HTTP Request Configuration" host="${SEED.url}" name="SEED_API" port="${SEED.port}" protocol="${SEED.protocol}">
+  <http:request-config basePath="/api/v3" doc:name="HTTP Request Configuration" host="${SEED.url}" name="SEED_API" port="${SEED.port}" protocol="${SEED.protocol}">
     <http:basic-authentication password="${SEED.apikey}" preemptive="true" username="${SEED.user}"/>
   </http:request-config>
   <flow name="DeadLetterFlow">

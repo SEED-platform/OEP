@@ -30,8 +30,12 @@
     </catch-exception-strategy>
   </flow>
   <flow name="getpropertiesfororg" processingStrategy="synchronous">
-    <set-variable variableName="SeedPath" value="/labels/filter/?inventory_type=property_view&amp;organization_id=#[flowVars.organization_id]" doc:name="Variable"/>
-    <http:request config-ref="SEED_API" path="/labels/filter/?inventory_type=property_view&amp;organization_id=#[flowVars.organization_id]" method="POST" doc:name="HTTP: Get all labels for my organization"/>
+    <set-variable variableName="SeedPath" value="/properties/labels/?organization_id=#[flowVars.organization_id]" doc:name="Variable"/>
+    <http:request config-ref="SEED_API" path="/properties/labels/?organization_id=#[flowVars.organization_id]" method="POST" doc:name="HTTP: Get all labels for my organization" sendBodyMode="NEVER">
+      <http:request-builder>
+        <http:header headerName="Content-Type" value="application/json" />
+      </http:request-builder>
+    </http:request>
     <json:json-to-object-transformer returnClass="java.lang.Object" doc:name="JSON to Object"/>
     <scripting:transformer doc:name="Groovy: only look at properties with the 'Add to Salesforce' Label">
       <scripting:script engine="Groovy"><![CDATA[return payload.find { it.name == flowVars.IndicationLabel }]]></scripting:script>

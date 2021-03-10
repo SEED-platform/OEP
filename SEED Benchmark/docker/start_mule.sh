@@ -30,11 +30,6 @@ if [ -z ${SEED_PORT+x} ]; then
     exit 1
 fi
 
-if [ -z ${SEED_APIVERSION+x} ]; then
-    echo "SEED_APIVERSION is not set and is required"
-    exit 1
-fi
-
 if [ -z ${OEP_CRON_TIMER+x} ]; then
     echo "OEP_CRON_TIMER is not set and is required"
     exit 1
