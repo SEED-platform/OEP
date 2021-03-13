@@ -1,5 +1,12 @@
 # OEP / SEED Benchmark
 
+## 1.7
+
+* Updated documentation to be markdown.
+* Add new Property Data Administrator field mapping from SEED to Salesfore
+* Add XML formatting
+* New SEED_APIVERSION field (defaults to v2 for now)
+
 ## 1.6
 
 * Escape quotes when passing data to SEED API
