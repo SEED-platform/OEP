@@ -1,5 +1,10 @@
 # OEP / SEED Benchmark
 
+## 1.8 (Unreleased)
+
+* Update SEED's API to version 3
+* Remove the SEED_APIVERSION field as multiple versions are not supported
+
 ## 1.7
 
 * Updated documentation to be markdown.
